@@ -32,14 +32,10 @@ public class E2EffectiveExpressions {
 
 		// Now let's process some objects from our list
 
-		// Process first object
-		processElementAtIndex(myList, 0);
-
-		// Process middle object
-		processElementAtIndex(myList, 100000 / 2);
-
-		// Process last object
-		processElementAtIndex(myList, 100000 - 1);
+		// Process all objects
+		for (int i = 0; i < 100000; i++) {
+			processElementAtIndex(myList, i);
+		}
 	}
 
 	private static void processElementAtIndex(final List<Object> list,
